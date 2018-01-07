@@ -3,6 +3,9 @@ Dennis Nedry Jurassic Park - Ah Ah Ah, you didn't say the magic word!
 
 Original Copyright (c) 2014 [Tully Robinson](https://github.com/tojrobinson/jurassicsystems.com)
 
+## Demo
+Try the demo [here](https://markhjorth.github.io/nedry/)
+
 ## License
 The MIT License (MIT)
 
