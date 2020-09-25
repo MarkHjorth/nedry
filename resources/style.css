@@ -4,19 +4,26 @@
   left: 0;
 }
 
-.body {
+htlm, .container {
+  width: 95vw;
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.nedry-body {
   position: relative;
   top: 0;
   left: 0;
 }
 
-.head {
+.nedry-head {
   position: absolute;
   top: 35px;
   left: 140px;
 }
 
-.hand{
+.nedry-hand{
   position: absolute;
   top: 155px;
   left: 265px;

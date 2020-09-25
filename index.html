@@ -1,16 +1,36 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
+<head>
+  <title>Ah Ah Ah, you didn't say the magic word!</title>
+</head>
 <html>
-  <div class="nedry">
-    <img class="body" src="resources/body.png">
-    <img class="head" src="resources/head.png">
-    <img class="hand" src="resources/hand.png">
-  </div>
+  <body>
+    <div class="container" onclick="playSound()">
+      <div class="nedry">
+        <img class="nedry-body" src="resources/body.png">
+        <img class="nedry-head" src="resources/head.png">
+        <img class="nedry-hand" src="resources/hand.png">
+      </div>
+      <audio id="player" autoplay loop>
+        <source src="resources/ahahah.mp3" type="audio/mp3">
+      </audio>
+      <input id="unmuteButton" type="button" onclick="playSound()" value="🔈 Unmute" />
+    </div>
+  </body>
   <link rel="stylesheet" href="resources/style.css">
+
   <script>
-    ahahah = new Audio("resources/ahahah.mp3"); 
-    ahahah.addEventListener('ended', function() {
-      this.play();
-    }, false);
-    ahahah.play();
+    const sound = document.getElementById('player');
+
+    sound.addEventListener('play', (event) => {
+      document.getElementById("unmuteButton").hidden = true;
+    });
+    sound.addEventListener('pause', (event) => {
+      document.getElementById("unmuteButton").hidden = false;
+    });
+
+    function playSound() {
+      document.getElementById("player").play();
+    }
   </script>
 </html>
