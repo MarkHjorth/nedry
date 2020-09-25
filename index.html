@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <html>
   <div class="nedry">
     <img class="body" src="resources/body.png">
@@ -6,11 +7,29 @@
     <img class="hand" src="resources/hand.png">
   </div>
   <link rel="stylesheet" href="resources/style.css">
+  <audio id="player" autoplay loop>
+    <source src="resources/ahahah.mp3" type="audio/mp3">
+  </audio>
+  <input id="muteButton" type="button" onclick="changeButtonText()" value="🔈 Unmute" />
+
   <script>
-    ahahah = new Audio("resources/ahahah.mp3"); 
-    ahahah.addEventListener('ended', function() {
-      this.play();
-    }, false);
-    ahahah.play();
+    const sound = document.getElementById('player');
+
+    sound.addEventListener('play', (event) => {
+      document.getElementById("muteButton").value = "🔇 Mute"
+    });
+    sound.addEventListener('pause', (event) => {
+      document.getElementById("muteButton").value = "🔈 Unmute"
+    });
+
+    function changeButtonText() {
+      var player = document.getElementById("player");
+      if (player.paused) {
+        player.play();
+      } else {
+        player.pause();
+      }
+    }
+    changeButtonText();
   </script>
 </html>
