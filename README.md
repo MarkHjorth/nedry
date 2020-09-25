@@ -7,6 +7,7 @@ Original Copyright (c) 2014 [Tully Robinson](https://github.com/tojrobinson/jura
 <a href="https://markhjorth.github.io/nedry/">
   <img width="500" src="https://github.com/markhjorth/nedry/blob/master/nedr-screenshot.png?raw=true">
 </a>
+</br>
 Try the demo <a href="https://markhjorth.github.io/nedry/">here</a>
 
 ## License
