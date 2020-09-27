@@ -1,7 +1,7 @@
 # Nedry
-Dennis Nedry Jurassic Park - Ah Ah Ah, you didn't say the magic word!
+A CSS animated Access Denied page complete with sound, featuring the beloved Dennis Nedry from Jurassic Park.
 
-An animated 401/403 Access Denied page complete with sound, featuring the beloved Dennis Nedry from Jurassic Park.
+Dennis Nedry Jurassic Park - Ah Ah Ah, you didn't say the magic word!
 
 ## Demo
 <a href="https://markhjorth.github.io/nedry/">
